@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Variabel JavaScript</title>
+    <title>Percabangan JavaScript</title>
 </head>
 <body>
-  <p>
+    <p>
     <script language="JavaScript">
-        let nama = "Leoni Ananda Listiani";
-        document.writeln(nama);
-
-        NPM = 2313025011;
-        document.writeln(nama);
-
-        nama = true;
-        document.writeln(nama);
+        alert("Terdapat 3 jenis barang yang tersedia!\n[1]Laptop\n[2]handphane\n[3]tas");
+        let indeksBarang = prompt("Membutuhkan jenis barang nomor berapa?");
+        if (indeksBarang < 1 || indeksBarang > 3) {
+            alert("Barang Tidak Tersedia!");
+        } else {
+            alert("Barang tersedia, mohon ditunggu sebentar..");
+        }
     </script>
-  </p>
+    </p>
 </body>
 </html>
