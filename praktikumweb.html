@@ -6,17 +6,28 @@
 <body>
     <p>
     <script language="JavaScript">
-        let nama = "LEONI ANANDA LISTIANI";
+        function buah() {
+            const buahArr = ["Pear", "palm", "jeruk", "semangka", "apel"];
+            for (const x of buahArr) {
+                console.log(x);
+            }
+        }
 
-        document.write(("Halo " + nama + "!<br>").repeat(5));
+        buah()
+
+        let hewan1 = 'kucing'
+        let hewan2 = 'kupu-kupu'
+
+        function hewan() {
+            let hewan1 = 'ikan'
+            console.log(hewan1)
+            console.log(hewan2)
+        }
+
+        console.log(hewan1)
+        console.log(hewan2)
+        hewan()
     </script>
     </p>
-
-    <script>
-        let barang = ["TAS", "SEPATU", "DOMPET"];
-        for (indeks in barang) {
-            document.write("<p>barang nomor " + indeks + " : " + barang[indeks] + "</p>");
-        }
-    </script>
 </body>
 </html>
