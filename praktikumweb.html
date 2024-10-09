@@ -6,13 +6,21 @@
 <body>
     <p>
     <script language="JavaScript">
-        alert("Terdapat 3 jenis barang yang tersedia!\n[1]Laptop\n[2]handphane\n[3]tas");
-        let indeksBarang = prompt("Membutuhkan jenis barang nomor berapa?");
-        if (indeksBarang < 1 || indeksBarang > 3) {
-            alert("Barang Tidak Tersedia!");
-        } else {
-            alert("Barang tersedia, mohon ditunggu sebentar..");
-        }
+        let alatIT = ["monitor", "keyboard", "joystick"];
+
+        document.writeln("Berikut Perangkat yang terdapat dalam array: </br>");
+        document.writeln(alatIT[0] + "</br>" + alatIT[1] + "</br>" + alatIT[2] + "</br>");
+
+        const pembeli = [];
+        pembeli["nama"] = "Dani";
+        pembeli["usia"] = 20;
+        pembeli["asal"] = "Korea";
+
+        document.writeln("</br>");
+        document.writeln("Berikut data Pembeli yang di-input-kan: ");
+        document.writeln("</br>" + "Nama : " + pembeli["nama"] +
+        "</br>" + "Usia : " + pembeli["usia"] +
+        "</br>" + "Asal : " + pembeli["asal"]);
     </script>
     </p>
 </body>
