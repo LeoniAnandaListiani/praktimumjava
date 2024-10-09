@@ -6,22 +6,17 @@
 <body>
     <p>
     <script language="JavaScript">
-        let alatIT = ["monitor", "keyboard", "joystick"];
+        let nama = "LEONI ANANDA LISTIANI";
 
-        document.writeln("Berikut Perangkat yang terdapat dalam array: </br>");
-        document.writeln(alatIT[0] + "</br>" + alatIT[1] + "</br>" + alatIT[2] + "</br>");
-
-        const pembeli = [];
-        pembeli["nama"] = "Dani";
-        pembeli["usia"] = 20;
-        pembeli["asal"] = "Korea";
-
-        document.writeln("</br>");
-        document.writeln("Berikut data Pembeli yang di-input-kan: ");
-        document.writeln("</br>" + "Nama : " + pembeli["nama"] +
-        "</br>" + "Usia : " + pembeli["usia"] +
-        "</br>" + "Asal : " + pembeli["asal"]);
+        document.write(("Halo " + nama + "!<br>").repeat(5));
     </script>
     </p>
+
+    <script>
+        let barang = ["TAS", "SEPATU", "DOMPET"];
+        for (indeks in barang) {
+            document.write("<p>barang nomor " + indeks + " : " + barang[indeks] + "</p>");
+        }
+    </script>
 </body>
 </html>
