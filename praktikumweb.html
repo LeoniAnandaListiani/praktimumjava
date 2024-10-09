@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Percabangan JavaScript</title>
+    <title>Pengecekan Membership Restoran</title>
 </head>
 <body>
-    <p>
-    <script language="JavaScript">
-        function buah() {
-            const buahArr = ["Pear", "palm", "jeruk", "semangka", "apel"];
-            for (const x of buahArr) {
-                console.log(x);
+    <script>
+        // Data pelanggan
+        let pelanggan = [
+            { nama: "Lena", membership: true },
+            { nama: "Rio", membership: false }
+        ];
+        function cekDiskon(pelanggan) {
+            if (pelanggan.membership) {
+                console.log(pelanggan.nama + " Mendapatkan diskon 5%");
+            } else {
+                console.log(pelanggan.nama + " Tidak mendapatkan diskon");
             }
         }
 
-        buah()
-
-        let hewan1 = 'kucing'
-        let hewan2 = 'kupu-kupu'
-
-        function hewan() {
-            let hewan1 = 'ikan'
-            console.log(hewan1)
-            console.log(hewan2)
+        for (let i = 0; i < pelanggan.length; i++) {
+            cekDiskon(pelanggan[i]);
         }
-
-        console.log(hewan1)
-        console.log(hewan2)
-        hewan()
     </script>
-    </p>
 </body>
 </html>
